@@ -20,7 +20,7 @@
 )
 
 (defalias
-  num (layer-toggle numrow)
+  num (layer-while-held numrow)
 )
 
 ;; vim: set ft=lisp
