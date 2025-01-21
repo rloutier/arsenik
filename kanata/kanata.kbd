@@ -27,7 +27,7 @@
 ;; See https://colemakmods.github.io/ergonomic-mods/angle.html for more details.
 
 ;; (include defsrc/pc.kbd)  ;; PC, standard finger assignment
-(include defsrc/pc_rlo.kbd)  ;; A few keys added to the basic 33-keys version (easier transition for AZERTY beginners)
+(include defsrc/pc_rlo.kbd)  ;; A few keys added (full AltGr, Esc/Caps switch)
 ;; (include defsrc/mac.kbd)  ;; Mac, standard finger assignment
 ;; (include defsrc/pc_anglemod.kbd)  ;; PC, ZXCVB are shifted to the left
 ;; (include defsrc/mac_anglemod.kbd)  ;; Mac, ZXCVB are shifted to the left
@@ -41,7 +41,7 @@
 
 ;; (include deflayer/base.kbd)  ;; standard keyboard behavior
 ;; (include deflayer/base_lt.kbd)  ;; layer-taps on both thumb keys
-(include deflayer/base_lt_rlo.kbd)  ;; layer-taps on both thumb keys
+(include deflayer/base_lt_rlo.kbd)  ;; layer-taps on both thumb keys + Esc/Caps switch
 ;; (include deflayer/base_lt_hrm.kbd)  ;; layer-taps + home-row mods
 
 ;; Note: not enabling layer-taps here makes the rest of the file useless.
@@ -51,7 +51,7 @@
 ;; `Symbols` layer
 
 ;; (include deflayer/symbols_noop.kbd)  ;; AltGr stays as-is
-(include deflayer/symbols_noop_rlo.kbd)  ;; AltGr stays as-is
+(include deflayer/symbols_noop_rlo.kbd)  ;; Full AltGr
 ;; (include deflayer/symbols_lafayette.kbd)  ;; AltGr programmation layer like Ergo‑L
 ;; (include deflayer/symbols_noop_num.kbd)  ;; AltGr stays as-is + NumRow layers
 ;; (include deflayer/symbols_lafayette_num.kbd)  ;; AltGr prog layer + NumRow layers
@@ -61,7 +61,7 @@
 ;; `Navigation` layer: ESDF or HJKL?
 
 ;; (include deflayer/navigation.kbd)  ;; ESDF on the left, NumPad on the right
-(include deflayer/navigation_rlo.kbd)  ;; ESDF on the left, NumPad on the right
+(include deflayer/navigation_rlo.kbd)  ;; Modifiers/shortcuts on the left, Arrow-like on the right
 ;; (include deflayer/navigation_vim.kbd)  ;; HJKL + NumPad on [Space]+[Q]
 
 ;; Replace XX by the keyboard shortcut of your application launcher, if any.
