@@ -1,0 +1,16 @@
+;; `defsrc` defines the keys that will be intercepted by kanata.
+;; RLO:
+;; esc/caps added for lovely permutation
+;; last keys on top row added as on AZERTY, they give ] and } via AltGr
+;; necessary for full use with "basic" symbols layer
+
+(defsrc
+  esc
+       1    2    3    4    5  bspc   6    7    8    9    0    -    =
+       q    w    e    r    t         y    u    i    o    p
+  caps a    s    d    f    g         h    j    k    l    ;
+       <    z    x    c    v    b    n    m    ,    .    /
+                 lalt          spc             ralt
+)
+
+;; vim: set ft=lisp
