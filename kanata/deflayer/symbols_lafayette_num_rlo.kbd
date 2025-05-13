@@ -6,25 +6,24 @@
        @^   @<   @>   @$   @%        @@   @&   @*   @'   @`
   _    @{   @pl  @pr  @}   @=        @\   @+   @-   @/   @''
        @~   @[   @]   @_   @#   XX   @|   @?   @.   @:   @!
-                 @sym          @num            _
+                 @sym          @pad            _
 )
 
 ;; Note: this requires kanata 0.5+ to work properly.
 ;; kanata 0.4 does not release Shift soon enough for this layer to work.
 
-;; Numrow layer
-
-(deflayer numrow
+;; NumPad
+(deflayer numpad
   _
        _    _    _    _    _     _   _    _    _    _    _    _    _
-       @s1  @s2  @s3  @s4  @s5       @s6  @s7  @s8  @s9  @s0
-  _    @1   @2   @3   @4   @5        @6   @7   @8   @9   @0
-       @dk1 @dk2 @dk3 @dk4 @dk5  _   XX   @,   @.   @/   @-
-                 @sym            _             _
+       XX   XX   XX   XX   XX        @/   @7   @8   @9   XX
+  _    XX   XX   XX   XX   XX        @-   @4   @5   @6   @0
+       XX   XX   XX   XX   XX    _   @,   @1   @2   @3   @.
+                 _               _             _
 )
 
 (defalias
-  num (layer-while-held numrow)
+  pad (layer-while-held numpad)
 )
 ;; vim: set ft=lisp
 
