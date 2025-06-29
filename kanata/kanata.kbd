@@ -42,8 +42,9 @@
 
 ;; (include deflayer/base.kbd)  ;; standard keyboard behavior
 ;; (include deflayer/base_lt.kbd)  ;; layer-taps on both thumb keys
-(include deflayer/base_lt_rlo.kbd)  ;; layer-taps on both thumb keys + Esc/Caps switch
+;; (include deflayer/base_lt_rlo.kbd)  ;; layer-taps on both thumb keys + Esc/Caps switch
 ;; (include deflayer/base_lt_hrm.kbd)  ;; layer-taps + home-row mods
+(include deflayer/base_lt_hrm_rlo.kbd)  ;; layer-taps on both thumb keys + Esc/Caps switch + HRM !!!
 
 ;; Note: not enabling layer-taps here makes the rest of the file useless.
 
