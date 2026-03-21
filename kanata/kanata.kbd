@@ -18,7 +18,7 @@
   ;; The key must be held 200ms to become a layer shift.
   hold_timeout 200
   ;; Slightly higher value for typing keys, to prevent unexpected hold effect.
-  long_hold_timeout 300
+  long_hold_timeout 225
 )
 
 ;;-----------------------------------------------------------------------------
@@ -27,10 +27,10 @@
 ;; See https://colemakmods.github.io/ergonomic-mods/angle.html for more details.
 
 ;; (include defsrc/pc.kbd)  ;; PC, standard finger assignment
-(include defsrc/pc_rlo.kbd)  ;; A few keys added (full AltGr, Esc/Caps switch)
+;; (include defsrc/pc_rlo.kbd)  ;; A few keys added (full AltGr, Esc/Caps switch)
 ;; (include defsrc/mac.kbd)  ;; Mac, standard finger assignment
 ;; (include defsrc/pc_anglemod.kbd)  ;; PC, ZXCVB are shifted to the left
-;; (include defsrc/pc_anglemod_rlo.kbd)  ;; PC, ZXCVB are shifted to the left
+(include defsrc/pc_anglemod_rlo.kbd)  ;; PC, ZXCVB are shifted to the left
 ;; (include defsrc/mac_anglemod.kbd)  ;; Mac, ZXCVB are shifted to the left
 ;; (include defsrc/pc_wide_anglemod.kbd)  ;; PC, angle-mod + right hand shifted by one key
 ;; (include defsrc/mac_wide_anglemod.kbd)  ;; Mac, angle-mod + right hand shifted by one key
