@@ -1,7 +1,7 @@
 ;; Navigation-focused layer:
 ;;  - right: just main navigation keys: arrows, home, etc...
 ;;  - left: one-handed shortcuts (Cmd/Ctrl-AZXCV) + Tab/S-Tab
-;;      4 modifiers: M/A/S/C often combined with nav keys
+;;      4 modifiers: M/A/C/S often combined with nav keys
 ;;  - top: Super-num to quickly access pinned apps on taskbar (Windows)
 
 ;; The `lrld` action stands for "live reload". This will re-parse everything
@@ -11,7 +11,7 @@
   _
        M-1  M-2  M-3  M-4  M-5  lrld M-6  M-7  M-8  M-9  M-0  _    _
        @all @ndo S-tab tab XX        pgup home end  pgdn @run
-  _    lmet lalt lsft lctl XX        lft  down up   rght XX
+  _    lmet lalt lctl lsft XX        lft  down up   rght XX
        @cls @cut @cpy @pst XX    _   XX   XX   XX   XX   XX
                  del             _             _
 )
