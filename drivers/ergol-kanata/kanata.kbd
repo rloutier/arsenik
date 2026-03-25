@@ -4,27 +4,43 @@
 ;;                                                                          ;;
 ;;==========================================================================;;
 
+;; Timing variables for tap-hold effects.
+(defvar
+  ;; The key must be pressed twice in 200ms to enable repetitions.
+  tap_timeout 200
+  ;; The key must be held 200ms to become a layer shift.
+  hold_timeout 200
+  ;; Slightly higher value for typing keys, to prevent unexpected hold effect.
+  long_hold_timeout 225
+)
 
 ;;-----------------------------------------------------------------------------
 ;; Choose here if you want to add an angle mod: ZXCVB are shifted to the left.
 ;; See https://colemakmods.github.io/ergonomic-mods/angle.html for more details.
 
-(include defsrc_pc.kbd)  ;; PC, standard finger assignment
+;;(include defsrc_pc.kbd)  ;; PC, standard finger assignment
 ;;(include defsrc_pc_anglemod.kbd)  ;; PC, ZXCVB are shifted to the left
+(include defsrc_pc_anglemod_rlo.kbd)  ;; PC, ZXCVB are shifted to the left + Esc/caps switch
 
 
 ;;-----------------------------------------------------------------------------
 ;; Base keymap
 
-(include deflayer_base_over_azerty.kbd)  ;; Azerty-FR
+;;(include deflayer_base_over_azerty.kbd)  ;; Azerty-FR
+(include deflayer_base_over_azerty_rlo.kbd)  ;; Azerty-FR
 
 
 ;;-----------------------------------------------------------------------------
 ;; `Symbols` layer
 ;; You need this, don’t disable it.
 
-(include deflayer_symbols_lafayette.kbd)
+;;(include deflayer_symbols_lafayette.kbd)
+(include deflayer_symbols_lafayette_rlo.kbd)
 
+;;-----------------------------------------------------------------------------
+;; `Navigation` layer
+
+(include deflayer_navigation_rlo.kbd)  ;; Modifiers/shortcuts on the left, Arrow-like on the right
 
 ;;-----------------------------------------------------------------------------
 ;; Aliases for `Symbols` and `Navigation` layers
