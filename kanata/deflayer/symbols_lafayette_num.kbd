@@ -6,7 +6,7 @@
        @^   @<   @>   @$   @%        @@   @&   @*   @'   @`
   _    @{   @pl  @pr  @}   @=        @\   @+   @-   @/   @''
        @~   @[   @]   @_   @#   XX   @|   @?   @.   @:   @!
-                 @sym          @pad            _
+                 @pad          spc             _
 )
 
 ;; Note: this requires kanata 0.5+ to work properly.
@@ -16,14 +16,13 @@
 (deflayer numpad
   _
        _    _    _    _    _     _   _    _    _    _    _    _    _
-       XX   XX   XX   XX   XX        @-   @7   @8   @9   XX
-  _    XX   XX   XX   XX   XX        @/   @4   @5   @6   @0
+       XX   home up   end  XX        @-   @7   @8   @9   XX
+  _    XX   lft  down rght XX        @/   @4   @5   @6   @0
        XX   XX   XX   XX   XX    _   @,   @1   @2   @3   @.
-                 _               _             _
+                 _              spc            _
 )
 
 (defalias
   pad (layer-while-held numpad)
 )
 ;; vim: set ft=lisp
-
