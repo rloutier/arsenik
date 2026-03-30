@@ -19,10 +19,11 @@
        XX   home up   end  XX        @-   @7   @8   @9   XX
   _    XX   lft  down rght XX        @/   @4   @5   @6   @0
        XX   XX   XX   XX   XX    _   @,   @1   @2   @3   @.
-                 _              spc            _
+                 @std           spc            @sym
 )
 
 (defalias
-  pad (layer-while-held numpad)
+  std (layer-switch base)
+  pad (tap-hold-press 0 $long_hold_timeout (layer-switch numpad) (layer-while-held numpad))
 )
 ;; vim: set ft=lisp
