@@ -6,7 +6,7 @@
        @^   @<   @>   @$   @%        @@   @&   @*   @'   @`
   _    @{   @pl  @pr  @}   @=        @\   @+   @-   @/   @''
        @~   @[   @]   @_   @#   XX   @|   @?   @.   @:   @!
-                 @pad          spc             _
+                 @pad          @fun            _
 )
 
 ;; Note: this requires kanata 0.5+ to work properly.
@@ -22,8 +22,19 @@
                  @std           spc            @sym
 )
 
+;; function keys
+(deflayer funpad
+  _
+       XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+  _    XX   XX   XX   XX   XX        XX   f7   f8   f9   f12
+       XX   lmet lalt lctl XX        XX   f4   f5   f6   f10
+       XX   XX   XX   XX   XX    _   XX   f1   f2   f3   f11
+                 @std           XX             @std
+)
+
 (defalias
   std (layer-switch base)
   pad (tap-hold-press 0 $long_hold_timeout (layer-switch numpad) (layer-while-held numpad))
+  fun (tap-hold-press 0 $long_hold_timeout (layer-switch funpad) (layer-while-held funpad))
 )
 ;; vim: set ft=lisp
