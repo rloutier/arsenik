@@ -1,10 +1,10 @@
-;; Base layer: layer-taps under the thumbs + home-row mods on SDF and JKL
+;; Base layer: layer-taps under the thumbs + home-row mods on ASDF and JKLM
 
 (deflayer base
   caps
        _    _    _    _    _    _    _    _    _    _    _    _    _
        q    w    e    r    t         y    u    i    o    p
-  @ctl a    @ss  @dd  @ff  g         h    @jj  @kk  @ll  ;
+  @ctl @aa  @ss  @dd  @ff  g         h    @jj  @kk  @ll  @mm
        z    x    c    v    b    <    n    m    ,    .    /
                  @sft          @nav            @sym
 )
@@ -22,13 +22,15 @@
   ctl (tap-hold-press $tap_timeout $hold_timeout esc  lctl)
 
   ;; Home-row mods
-  ss (tap-hold $tap_timeout $long_hold_timeout s lmet)
-  dd (tap-hold $tap_timeout $long_hold_timeout d lalt)
+  aa (tap-hold $tap_timeout $long_hold_timeout a lmet)
+  ss (tap-hold $tap_timeout $long_hold_timeout s lalt)
+  dd (tap-hold $tap_timeout $long_hold_timeout d lsft)
   ff (tap-hold $tap_timeout $long_hold_timeout f lctl)
 
   jj (tap-hold $tap_timeout $long_hold_timeout j rctl)
-  kk (tap-hold $tap_timeout $long_hold_timeout k lalt)
-  ll (tap-hold $tap_timeout $long_hold_timeout l rmet)
+  kk (tap-hold $tap_timeout $long_hold_timeout k rsft)
+  ll (tap-hold $tap_timeout $long_hold_timeout l lalt)
+  mm (tap-hold $tap_timeout $long_hold_timeout ; rmet)
 )
 
 ;; vim: set ft=lisp
