@@ -6,7 +6,7 @@
        @^   @<   @>   @$   @%        @@   @&   @*   @'   @`
   _    @{   @pl  @pr  @}   @=        @\   @+   @-   @/   @''
        @~   @[   @]   @_   @#   XX   @|   @?   @.   @:   @!
-                 @pad          @fun            _
+                 @fun          @pad            _
 )
 
 ;; Note: this requires kanata 0.5+ to work properly.
@@ -17,9 +17,9 @@
   _
        _    _    _    _    _     _   _    _    _    _    _    _    _
        XX   home up   end  XX        @-   @7   @8   @9   XX
-  _    XX   lft  down rght XX        @/   @4   @5   @6   @0
+  _    XX   lft  down rght bspc      @/   @4   @5   @6   @0
        XX   XX   XX   XX   XX    _   @,   @1   @2   @3   @.
-                 @std           spc            @sym
+                 @std           spc            ret
 )
 
 ;; function keys
@@ -27,7 +27,7 @@
   _
        XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
   _    XX   XX   XX   XX   XX        XX   f7   f8   f9   f12
-       XX   lmet lalt lctl XX        XX   f4   f5   f6   f10
+       lmet lalt lsft lctl XX        XX   f4   f5   f6   f10
        XX   XX   XX   XX   XX    _   XX   f1   f2   f3   f11
                  @std           XX             @std
 )
