@@ -22,15 +22,15 @@
   ctl (tap-hold-press $tap_timeout $hold_timeout esc  lctl)
 
   ;; Home-row mods
-  aa (tap-hold $tap_timeout $long_hold_timeout a lmet)
-  ss (tap-hold $tap_timeout $long_hold_timeout s lalt)
-  dd (tap-hold $tap_timeout $long_hold_timeout d lsft)
-  ff (tap-hold $tap_timeout $long_hold_timeout f lctl)
+  aa (tap-hold-release $tap_timeout $long_hold_timeout a lmet)
+  ss (tap-hold-release $tap_timeout $long_hold_timeout s lalt)
+  dd (tap-hold-release $tap_timeout $long_hold_timeout d lsft)
+  ff (tap-hold-release $tap_timeout $long_hold_timeout f lctl)
 
-  jj (tap-hold $tap_timeout $long_hold_timeout j rctl)
-  kk (tap-hold $tap_timeout $long_hold_timeout k rsft)
-  ll (tap-hold $tap_timeout $long_hold_timeout l lalt)
-  mm (tap-hold $tap_timeout $long_hold_timeout ; rmet)
+  jj (tap-hold-release $tap_timeout $long_hold_timeout j rctl)
+  kk (tap-hold-release $tap_timeout $long_hold_timeout k rsft)
+  ll (tap-hold-release $tap_timeout $long_hold_timeout l lalt)
+  mm (tap-hold-release $tap_timeout $long_hold_timeout ; rmet)
 )
 
 ;; vim: set ft=lisp
