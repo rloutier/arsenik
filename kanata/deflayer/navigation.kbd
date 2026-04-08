@@ -1,8 +1,7 @@
 ;; Navigation-focused layer:
-;;  - right: just main navigation keys: arrows, home, etc...
+;;  - right: just main "à la VIM" navigation keys: arrows, home, etc...
 ;;  - left: one-handed shortcuts (Cmd/Ctrl-WAZXCV) + Tab/S-Tab
-;;      4 modifiers: M/C/A/S often combined with nav keys
-;;          HRM for M/C/A, Shift under thumb, like base layer
+;;      4 modifiers: M/A/S/C often combined with nav keys
 ;;  - top: Super-num to quickly access pinned apps on taskbar (Windows)
 
 ;; The `lrld` action stands for "live reload". This will re-parse everything
