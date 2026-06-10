@@ -26,12 +26,13 @@
 ;; Choose here if you want to add an angle mod: ZXCVB are shifted to the left.
 ;; See https://colemakmods.github.io/ergonomic-mods/angle.html for more details.
 
-(include defsrc/pc.kbd)  ;; A few keys added (full AltGr, Esc/Caps switch)
+;; (include defsrc/pc.kbd)  ;; A few keys added (full AltGr, Esc/Caps switch)
 ;; (include defsrc/mac.kbd)  ;; Mac, standard finger assignment
 ;; (include defsrc/pc_anglemod.kbd)  ;; PC, ZXCVB are shifted to the left
 ;; (include defsrc/mac_anglemod.kbd)  ;; Mac, ZXCVB are shifted to the left
 ;; (include defsrc/pc_wide_anglemod.kbd)  ;; PC, angle-mod + right hand shifted by one key
 ;; (include defsrc/mac_wide_anglemod.kbd)  ;; Mac, angle-mod + right hand shifted by one key
+(include defsrc/go60.kbd)  ;; PC, selenium pour Go60
 
 
 ;;-----------------------------------------------------------------------------
@@ -91,4 +92,4 @@
   windows-altgr cancel-lctl-press
 )
 
-;; vim: set ft=lisp
+;; vim: set ft=lisp:

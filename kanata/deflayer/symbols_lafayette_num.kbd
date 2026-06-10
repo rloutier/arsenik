@@ -6,7 +6,7 @@
        @^   @<   @>   @$   @%        @@   @&   @*   @'   @`
   _    @{   @pl  @pr  @}   @=        @\   @+   @-   @/   @''
        @~   @[   @]   @_   @#   XX   @|   @?   @;   @:   @!
-                 @fpd          @npd            _
+                 _    _    _              _    _    _
 )
 
 ;; Note: this requires kanata 0.5+ to work properly.
@@ -19,7 +19,7 @@
        XX   home up   end  XX        @-   @7   @8   @9   @:
   _    XX   lft  down rght bspc      @/   @4   @5   @6   @0
        XX   XX   XX   XX   XX    _   @,   @1   @2   @3   @.
-                 @std           spc            @sym
+                 _    _    _              _    _    _
 )
 
 ;; miscellanous keys
@@ -29,7 +29,7 @@
        XX   ins  brk  prnt XX        XX   f7   f8   f9   f12
   _    lmet lalt lsft lctl XX        menu f4   f5   f6   f10
        XX   XX   XX   XX   XX    _   XX   f1   f2   f3   f11
-                 @std           XX             @std
+                 _    _    _              _    _    _
 )
 
 (defalias
