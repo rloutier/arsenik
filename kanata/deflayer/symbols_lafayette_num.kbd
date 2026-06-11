@@ -6,7 +6,7 @@
        @^   @<   @>   @$   @%        @@   @&   @*   @'   @`
   _    @{   @pl  @pr  @}   @=        @\   @+   @-   @/   @''
        @~   @[   @]   @_   @#   XX   @|   @?   @;   @:   @!
-                 _    _    _              _    _    _
+                 @npd spc  ret            _    _    _
 )
 
 ;; Note: this requires kanata 0.5+ to work properly.
@@ -17,24 +17,13 @@
   _
        _    _    _    _    _     _   _    _    _    _    _    _    _
        XX   home up   end  XX        @-   @7   @8   @9   @:
-  _    XX   lft  down rght bspc      @/   @4   @5   @6   @0
+  _    XX   lft  down rght XX        @/   @4   @5   @6   @0
        XX   XX   XX   XX   XX    _   @,   @1   @2   @3   @.
                  _    _    _              _    _    _
 )
 
-;; miscellanous keys
-(deflayer funpad
-  _
-       XX   nlk  slck caps XX   XX   XX   XX   XX   XX   XX   XX   XX
-       XX   ins  brk  prnt XX        XX   f7   f8   f9   f12
-  _    lmet lalt lsft lctl XX        menu f4   f5   f6   f10
-       XX   XX   XX   XX   XX    _   XX   f1   f2   f3   f11
-                 _    _    _              _    _    _
+(defalias
+  npd (layer-while-held numpad)
 )
 
-(defalias
-  std (layer-switch base)
-  npd (tap-hold-press 0 $long_hold_timeout (layer-switch numpad) (layer-while-held numpad))
-  fpd (tap-hold-press 0 $long_hold_timeout (layer-switch funpad) (layer-while-held funpad))
-)
-;; vim: set ft=lisp:
+;; vim: set ft=lisp
