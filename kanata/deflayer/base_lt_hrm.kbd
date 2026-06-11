@@ -17,12 +17,12 @@
 
   ;; Space-cadet thumb keys:
   ;; Acts as a modifier by default, or a key when tapped separately.
-  sft lsft
+  sft (one-shot-press $sticky_timeout lsft)
   bks (tap-hold-press $tap_timeout $hold_timeout bspc (layer-while-held navigation))
   esc (tap-hold-press $tap_timeout $hold_timeout esc (layer-while-held numpad))
 
   ret (tap-hold-press $tap_timeout $hold_timeout ret (layer-while-held numpad))
-  sym (layer-while-held symbols)
+  sym (one-shot-press $sticky_timeout (layer-while-held symbols))
 
   ctl (tap-hold-press $tap_timeout $hold_timeout esc  lctl)
 

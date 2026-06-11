@@ -23,7 +23,7 @@
 )
 
 (defalias
-  npd (layer-while-held numpad)
+  npd (one-shot-press $sticky_timeout (layer-while-held numpad))
 )
 
 ;; vim: set ft=lisp
