@@ -11,6 +11,7 @@
   cut C-x
   cpy C-c
   pst C-v
+  rdo C-y
 
   0 S-0
   1 S-1

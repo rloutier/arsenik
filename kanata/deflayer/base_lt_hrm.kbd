@@ -33,4 +33,4 @@
   mm (tap-hold-release $tap_timeout $long_hold_timeout ; rmet)
 )
 
-;; vim: set ft=lisp
+;; vim: set ft=lisp:
