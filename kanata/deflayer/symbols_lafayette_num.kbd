@@ -27,7 +27,7 @@
   _
        XX   nlk  slck caps XX   XX   XX   XX   XX   XX   XX   XX   XX
        XX   ins  brk  prnt XX        XX   f7   f8   f9   f12
-  _    lmet lalt lsft lctl menu      XX   f4   f5   f6   f10
+  _    lmet lalt lsft lctl XX        menu f4   f5   f6   f10
        XX   XX   XX   XX   XX    _   XX   f1   f2   f3   f11
                  @std           XX             @std
 )
