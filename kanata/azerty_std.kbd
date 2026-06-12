@@ -57,8 +57,8 @@
 ;;-----------------------------------------------------------------------------
 ;; `Navigation` layer: ESDF or HJKL?
 
-(include deflayer/navigation.kbd)  ;; Modifiers/shortcuts on the left, Arrow-like on the right
-;; (include deflayer/navigation_vim.kbd)  ;; HJKL + NumPad on [Space]+[Q]
+;; (include deflayer/navigation.kbd)  ;; Modifiers/shortcuts on the left, Arrow-like on the right
+(include deflayer/navigation_vim.kbd)  ;; HJKL + NumPad on [Space]+[Q]
 
 ;; Replace XX by the keyboard shortcut of your application launcher, if any.
 ;; Mapped on [Space]+[P] in both navigation layers.
