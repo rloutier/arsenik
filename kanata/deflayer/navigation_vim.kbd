@@ -11,12 +11,25 @@
   _
        M-1  M-2  M-3  M-4  M-5  lrld M-6  M-7  M-8  M-9  M-0  _    _
        @all @ndo S-tab tab XX        pgup home end  pgdn @run
-  _    lmet lalt lsft lctl A-f4      lft  down up   rght esc
+  _    lmet lalt lsft lctl A-f4      lft  down up   rght XX
        @cls @cut @cpy @pst @rdo  _   @mwl @mwd @mwu @mwr XX
-                 del             _             _
+                 caps @del _               _   @fpd ralt
+)
+
+;; miscellanous keys
+(deflayer funpad
+  _
+       XX   nlk  slck caps XX   XX   XX   XX   XX   XX   XX   XX   XX
+       XX   ins  brk  prnt XX        XX   f7   f8   f9   f12
+  _    lmet lalt lsft lctl XX        menu f4   f5   f6   f10
+       XX   XX   XX   XX   XX    _   XX   f1   f2   f3   f11
+                 _    _    _              _    _    _
 )
 
 (defalias
+  del (tap-hold-press $tap_timeout $hold_timeout del (layer-while-held funpad))
+  fpd (layer-while-held funpad)
+
   ;; Mouse wheel emulation
   mwu (mwheel-up    50 120)
   mwd (mwheel-down  50 120)
