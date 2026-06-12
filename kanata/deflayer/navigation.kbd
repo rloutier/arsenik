@@ -16,7 +16,7 @@
 )
 
 ;; miscellanous keys
-(deflayer fnpad
+(deflayer funpad
   _
        XX   nlk  slck caps XX   XX   XX   XX   XX   XX   XX   XX   XX
        XX   ins  brk  prnt XX        XX   f7   f8   f9   f12
@@ -26,14 +26,13 @@
 )
 
 (defalias
-   fpd (layer-while-held fnpad)
+  del (tap-hold-press $tap_timeout $hold_timeout del (layer-while-held funpad))
+  fpd (layer-while-held funpad)
 
- ;; Mouse wheel emulation
+  ;; Mouse wheel emulation
   mwu (mwheel-up    50 120)
   mwd (mwheel-down  50 120)
   mwl (mwheel-left  50 120)
   mwr (mwheel-right 50 120)
-
-  del (tap-hold-press $tap_timeout $hold_timeout del (layer-while-held fnpad))
 )
-;; vim: set ft=lisp
+;; vim: set ft=lisp:

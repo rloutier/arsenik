@@ -26,4 +26,4 @@
   npd (one-shot-press $sticky_timeout (layer-while-held numpad))
 )
 
-;; vim: set ft=lisp
+;; vim: set ft=lisp:
